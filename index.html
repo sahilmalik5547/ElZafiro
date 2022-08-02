@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> El Zafiro</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.scss">
+    <!-- bootstrap 4 cdn links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Old+Standard+TT&display=swap" rel="stylesheet">
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ============data-aos============== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body class="bg-light">
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg sticky-top text-center justify-content-around container-fluid">
+        <a class="navbar-brand nb1" href="index.html"> <img src="image/logo.png" alt="Logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon text-black text-center" style="font-size: 35px;">
+                <i class="fa-solid fa-bars-staggered"></i></p>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around text-center" id="collapsibleNavbar">
+            <a class="navbar-brand nb2" href="index.html"> <img src="./image/logo.png" alt="Logo"></a>
+
+
+            <ul class="navbar-nav align-items-center ">
+                <li class="nav-item m-1"><a href="index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item dropdown m-1">
+                    <a href="#" class="nav-link navbar-toggle" id="navbardrop" data-toggle="dropdown">El Zafiro <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Location</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Reviews</a>
+                        <a class="dropdown-item" href="#">Terms & Condition</a>
+                    </div>
+                </li>
+                <li class="nav-item  m-1"><a href="#" class="nav-link ">Suites</a></li>
+                <li class="nav-item dropdown m-1">
+                    <a href="#" class="nav-link navbar-toggle" id="navbardrop" data-toggle="dropdown">Restaurant <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Our Kitchen</a>
+                        <a class="dropdown-item" href="#">Our Bar</a>
+                        <a class="dropdown-item" href="#">Menu</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown m-1">
+                    <a href="#" class="nav-link navbar-toggle" id="navbardrop" data-toggle="dropdown">Events <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Weddings</a>
+                        <a class="dropdown-item" href="#">Wedding Packages</a>
+                        <a class="dropdown-item" href="#">HoneyMoon Packages</a>
+                        <a class="dropdown-item" href="#">Private/Corporate</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown m-1">
+                    <a href="#" class="nav-link navbar-toggle" id="navbardrop" data-toggle="dropdown">Gallery <i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Photos</a>
+                        <a class="dropdown-item" href="#">videos</a>
+
+
+                    </div>
+                </li>
+            </ul>
+
+            <button class="btn bttn">Book Now</button>
+
+        </div>
+    </nav>
+
+    <!-- main banner -->
+    <section class="container-fluid px-0">
+        <div class="main-banner">
+            <video src="./image/vid.mp4" loop autoplay muted></video>
+            <div class="banner-content">
+                <a href="#prop"> <span
+                        class="animate__animated animate__fadeInDown animate__infinite animate__delay-2s text-white">
+                        <i class="fa-solid fa-angles-down"></i></span></a>
+            </div>
+        </div>
+    </section>
+    <!-- property section -->
+    <section class="container-fluid px-0 py-5" id="prop">
+        <div class="prop row no-gutters mx-auto py-5">
+            <div class="col-lg-3 p-3 pro">
+                <div class="prop-txt shadow-lg p-3 my-3 text-center">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <h4 class="hf">Exhilarating Experience</h4>
+                    <p>Offers a view of countless miles of beautiful white sand beaches and access to experience some of
+                        the islands great activities</p>
+                </div>
+                <div class="prop-img">
+                    <img src="image/prop1.jpg" alt="photo">
+                </div>
+            </div>
+            <div class="col-lg-3 p-3 pro">
+                <div class="prop-img nb2">
+                    <img src="./image/prop2.jpeg" alt="photo">
+                </div>
+                <div class="prop-txt shadow-lg p-3 my-3 text-center">
+                    <span><i class="fa-solid fa-peace"></i></span>
+                    <h4 class="hf">Boutique Style Suites</h4>
+                    <p>Innovative décor provides you with a breathtaking view. Our
+                        vibrant suites give you more space to relax.</p>
+                </div>
+                <div class="prop-img nb1">
+                    <img src="./image/prop2.jpeg" alt="photo">
+                </div>
+            </div>
+            <div class="col-lg-3 p-3 pro">
+                <div class="prop-txt shadow-lg p-3 my-3 text-center">
+                    <span><i class="fa-solid fa-spa"></i></span>
+                    <h4 class="hf">Wellness</h4>
+                    <p>At EL Zafiro, we regularly offer varieties of fitness classes such as yoga, pilates, kizomba, etc
+                        - right on the beach front!</p>
+                </div>
+                <div class="prop-img">
+                    <img src="./image/prop3.jpg" alt="photo">
+                </div>
+            </div>
+            <div class="col-lg-3 p-3 pro">
+                <div class="prop-img nb2">
+                    <img src="./image/prop4.jpg" alt="photo">
+                </div>
+                <div class="prop-txt shadow-lg p-3 my-3 text-center">
+                    <span><i class="fa-solid fa-martini-glass-citrus"></i></span>
+                    <h4 class="hf">Our Bar</h4>
+                    <p>Guests can sit at the bar for wide varieties of expertly crafted cocktails or even for simple
+                        rounds of your favorite beers.</p>
+                </div>
+                <div class="prop-img nb1">
+                    <img src="./image/prop4.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section -->
+    <section class="container py-5">
+        <span class="text-center">
+            <p style="color: #40E0d0;">EL ZAFIRO SERVICES</p>
+            <h1 class="hf">Explore Our Services</h1>
+            <div class="row mx-auto d-flex justify-content-around no-gutters">
+                <div class="col-lg-2 m-2">
+                    <div class="ser shadow-lg py-4">
+                        <span><i class="fa-solid fa-hot-tub-person"></i></span>
+                        <p class="px-3">SPA</p>
+                    </div>
+                </div>
+                <div class=" col-lg-2 m-2">
+                    <div class="ser shadow-lg py-4">
+                        <span><i class="fa-solid fa-star-of-life"></i></span>
+                        <p class="px-3">wellness</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 m-2">
+                    <div class="ser shadow-lg py-4">
+                        <span><i class="fa-solid fa-car"></i></span>
+                        <p class="px-3">Car Rental</p>
+                    </div>
+                </div>
+                <div class=" col-lg-2 m-2">
+                    <div class="ser shadow-lg py-4">
+                        <span><i class="fa-solid fa-sailboat"></i></span>
+                        <p class="px-3">Kayak & Paddle Boards</p>
+                    </div>
+                </div>
+                <div class=" col-lg-2 m-2">
+                    <div class="ser shadow-lg py-4">
+                        <span><i class="fa-solid fa-taxi"></i></span>
+                        <p class="px-3">Excursions</p>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </section>
+
+    <!-- book now -->
+    <section class="container-fluid b-now py-5">
+        <div class="row mx-auto d-flex justify-content-center text-center">
+            <div class="col-lg-4 col-sm-8 p-3">
+                <p class="b-txt m-0">
+                    BREAK AWAY! STAY! BEGIN AGAIN! <br>
+                    WE LOOK FORWARD TO WELCOMING YOU TO EL ZAFIRO.
+                </p>
+            </div>
+            <div class="col-lg-2 col-sm-4 p-3"> <button class="btn bttn btn-lg">Book Now</button></div>
+        </div>
+    </section>
+
+    <!-- our suites -->
+    <!-- <section class="container-fluid py-5">
+        <div class="our-suite mx-auto">
+            <h1 class="text-center p-3 hf">Suites</h1>
+            <div class="slider-container">
+                <div class="left-slide">
+                    <div style="background-color: #366caf">
+                        <h1 class="hf text-center">Aquamarine Suite</h1>
+                        <p>Home to iconic beach views and soothing earth tones with warm hues of blue and turquoise, the
+                            aquamarine suite provides you with a true taste of paradise living. Set over 650 sq. ft.
+                            area
+                        </p>
+                        <button class="btn btn-light">Book Now</button>
+
+                    </div>
+                    <div style="background-color: #40E0d0">
+                        <h1 class="hf text-center">Diamond Suite</h1>
+                        <p>Our ultra-extravagant Diamond suite gives you the experience of "royal-living". A gem within
+                            a
+                            gem.
+                            This suite reflects pure Caribbean luxury with mesmerizing unobstructed view of the
+                            glistening
+                        </p>
+                        <button class="btn btn-light">Book Now</button>
+
+                    </div>
+                    <div style="background-color: #366caf">
+                        <h1 class="hf text-center">Emerald Suite</h1>
+                        <p>EL Zafiro will lay world class luxury at your feet, your choice of a suite guarantees you an
+                            unforgettable experience the moment you walk through the gates or beach. the lavish interior
+                            and
+                            beautiful </p>
+                        <button class="btn btn-light">Book Now</button>
+                    </div>
+                    <div style="background-color: #40E0d0">
+                        <h1 class="hf text-center">Pearl Suite</h1>
+                        <p>Watch the sun rise and set from your own private patio or terrace, while enjoying the sunny
+                            warm weather and peaceful surrounding of Sint Maarten. The contemporary design and
+                            facilities will serve you</p>
+                        <button class="btn btn-light">Book Now</button>
+                    </div>
+                    <div style="background-color: #366caf">
+                        <h1 class="hf text-center">Peridot Suite</h1>
+                        <p>You will find perfect serenity when you take in the beautiful view from your private patio.
+                            Your furnished suite comes complete with a king size bed</p>
+                        <button class="btn btn-light">Book Now</button>
+                    </div>
+                    <div style="background-color: #40E0d0">
+                        <h1 class="hf text-center">Ruby Suite</h1>
+                        <p>As with every guest in an EL Zafiro suite, you are our vip, and the ruby suite will remind
+                            you of this every day. A passion for detail in design not only provides the foundation of El
+                            Zafiro</p>
+                        <button class="btn btn-light">Book Now</button>
+                    </div>
+                </div>
+                <div class="right-slide">
+                    <div style="background-image: url('https://www.elzafirosxm.com/uploads/1/CL-49.jpg');">
+                    </div>
+                    <div style="background-image: url('https://www.elzafirosxm.com/uploads/2/CL-20.jpg');">
+                    </div>
+                    <div style="background-image: url('https://www.elzafirosxm.com/uploads/3/CL-3.jpg');">
+                    </div>
+                    <div style="background-image: url('https://www.elzafirosxm.com/uploads/4/CL-56.jpg');">
+                    </div>
+                    <div style="background-image: url('https://www.elzafirosxm.com/uploads/5/CL-29.jpg');">
+                    </div>
+                    <div style="background-image: url('https://www.elzafirosxm.com/uploads/6/CL-30.jpg');">
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="down-button">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button class="up-button">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <section class="container-fluid px-0 py-5">
+        <div class="gall-banner mx-auto">
+            <h1 class="text-center p-3 hf">Suites</h1>
+            <div class="swiper swiper-3">
+                <div class="swiper-wrapper text-white">
+                    <div class="swiper-slide ">
+                        <div class="gal-img">
+                            <img src="./image/g1.jpg" alt="photo">
+                            <div class="gal-content text-center">
+                                <h1 class="hf">Ruby Suite</h1>
+                                <p>As with every guest in an EL Zafiro suite, you are our vip, and the ruby suite will
+                                    remind you of this every day. A passion for detail in design not only provides the
+                                    foundation of El Zafiro</p>
+                                <button class="btn btn-light">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="gal-img">
+                            <img src="./image/g2.jpg" alt="photo">
+                            <div class="gal-content text-center">
+                                <h1 class="hf ">Peridot Suite</h1>
+                                <p>You will find perfect serenity when you take in the beautiful view from your private
+                                    patio. Your furnished suite comes complete with a king size bed</p>
+                                <button class="btn btn-light">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="gal-img">
+                            <img src="./image/g3.jpg" alt="photo">
+                            <div class="gal-content text-center">
+                                <h1 class="hf ">Pearl Suite</h1>
+                                <p>Watch the sun rise and set from your own private patio or terrace, while enjoying the
+                                    sunny warm weather and peaceful surrounding of Sint Maarten. The contemporary design
+                                    and
+                                    facilities will serve you</p>
+                                <button class="btn btn-light">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".swiper-3", {
+                    effect: "fade",
+                    freeMode: false,
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                });
+            </script>
+        </div>
+    </section>
+
+
+    <!-- TOUR VIDEO -->
+    <section class="container-fluid px-0">
+        <div class="vdo-banner">
+            <div class="vdo-content text-white text-center">
+                <h1 class="hf">3D Tour of the Beach</h1> <br>
+                <button type="button"
+                    class="btn text-white animate__animated animate__pulse animate__infinite justify-content-center"
+                    data-toggle="modal" data-target="#myModal">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/2zLkOyodwXY?controls=0&amp;start=302"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen autoplay loop></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- review sction -->
+    <section class="container px-0 py-5">
+        <div class="rev-con">
+            <p class="text-center" style="color: #40E0d0;">TESTIMONIAL</p>
+            <h1 class="text-center py-3 hf">Happy Guests</h1>
+            <div class="swiper mySwiper shadow-lg">
+                <div class="swiper-wrapper" style="height: 300px;">
+                    <div class="swiper-slide ">
+                        <div class="rev mx-auto py-4">
+                            <h4 class="ml-5 hf">Debbie M</h4>
+                            <p><i class="fa-solid fa-quote-left p-2 mr-2"></i> <span style="color: #40E0d0;">AMAZING
+                                    VACATION</span></p>
+                            <p>We visited St Maarten and stayed at El Zafiro. From the moment we arrived the staff
+                                greeted us with smiles and did everything possible to make our vacation great. The rooms
+                                are clean, modern and right on the beach. The restaurant offers breakfast, lunch and
+                                dinner and the food</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="rev mx-auto py-4">
+                            <h4 class="ml-5 hf">381majorm</h4>
+                            <p><i class="fa-solid fa-quote-left p-2 mr-2"></i> <span style="color: #40E0d0;">AMAZING
+                                    HOTEL</span></p>
+                            <p>This place is simply amazing!!!! Felt very private yet family oriented as everyone were
+                                polite, friendly, and accommodating. The location was perfect as we rented a car The
+                                ambiance of hearing the beach and waking up to
+                                it was Breathtaking and the area was very quiet yet in the mix of things.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="rev mx-auto py-4">
+                            <h4 class="ml-5 hf">Expedition616637</h4>
+                            <p><i class="fa-solid fa-quote-left p-2 mr-2"></i> <span style="color: #40E0d0;">Great
+                                    boutique hotel,
+                                    great</span></p>
+                            <p>Great boutique hotel, great location, beautiful beach, not crowded at all ... the food is
+                                great!! Stayed for 7 days and the staff makes you feel like family!! Will definitely be
+                                coming back for a third time. The most amazing views. Definitely a place to come and get
+                                away from it all!!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="rev mx-auto py-4">
+                            <h4 class="ml-5 hf">Rudy M</h4>
+                            <p><i class="fa-solid fa-quote-left p-2 mr-2"></i> <span style="color: #40E0d0;">A wonderful
+                                    and sweet
+                                    place to be</span></p>
+                            <p>Very nice, comfortable, and right on the beach with a fantastic restaurant, you can't ask
+                                for more, of course I will come again, fantastic, thanks.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="rev mx-auto py-4">
+                            <h4 class="ml-5 hf">Lynn J.</h4>
+                            <p><i class="fa-solid fa-quote-left p-2 mr-2"></i> <span style="color: #40E0d0;">St Maarten
+                                    Trip</span></p>
+                            <p>Though the island is still beat up from hurricane Irma, The El Zafiro hotel was great.
+                                All the listing said it was.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="rev mx-auto py-4">
+                            <h4 class="ml-5 hf">Patty R.</h4>
+                            <p><i class="fa-solid fa-quote-left p-2 mr-2"></i> <span
+                                    style="color: #40E0d0;">Amazing</span></p>
+                            <p>We stayed for 11 days in The Ruby Suite. Truly amazing from the time they picked up us
+                                from the airport. The location was perfect. Walking distance to places. The suite was
+                                perfect for us. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    direction: "vertical",
+                    adaptiveheight: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    freeMode: false,
+                    loop: true,
+                    autoPlay: true,
+                });
+            </script>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer class="container-fluid px-0 py-4 ">
+        <ul class="text-center p-0">
+            <li>
+                <p><i class="fa-solid fa-phone p-2"></i>9100007730/1</p>
+            </li>
+            <li>
+                <p><i class="fa-solid fa-paper-plane p-2"></i>support@vortexdigitalworld.com </p>
+            </li>
+            <li>
+                <p><i class="fa-solid fa-map p-2"></i>34 White Sands Road, Beacon Hill, Sint Maarten </p>
+            </li>
+            <li>
+                <img src="./image/logo.png" alt="logo" height="100vh">
+            </li>
+            <li>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item p-3"> <a href="#"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                    <li class="nav-item p-3"> <a href="#"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="nav-item p-3"> <a href="#"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item p-3"> <a href="#"><i
+                                class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+    </footer>
+
+    <!-- fixed items -->
+    <div class="fs">
+        <img src="./image/168-br.svg" height="100px" alt="hand">
+        <div style="background-color: #40E0d0;">
+            <p class="text-white text-center">online</p>
+        </div>
+    </div>
+</body>
+<script>
+    const sliderContainer = document.querySelector('.slider-container')
+    const slideRight = document.querySelector('.right-slide')
+    const slideLeft = document.querySelector('.left-slide')
+    const upButton = document.querySelector('.up-button')
+    const downButton = document.querySelector('.down-button')
+    const slidesLength = slideRight.querySelectorAll('div').length
+
+    let activeSlideIndex = 0
+
+    slideLeft.style.top = `-${(slidesLength - 1) * 100}%`
+
+    upButton.addEventListener('click', () => changeSlide('up'))
+    downButton.addEventListener('click', () => changeSlide('down'))
+
+    const changeSlide = (direction) => {
+        const sliderHeight = sliderContainer.clientHeight
+        if (direction === 'up') {
+            activeSlideIndex++
+            if (activeSlideIndex > slidesLength - 1) {
+                activeSlideIndex = 0
+            }
+        } else if (direction === 'down') {
+            activeSlideIndex--
+            if (activeSlideIndex < 0) {
+                activeSlideIndex = slidesLength - 1
+            }
+        }
+
+        slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
+        slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
+    }
+</script>
+
+
+</html>
